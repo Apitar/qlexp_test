@@ -6,5 +6,7 @@ public enum ValueType {
 
     STRING,
 
-    INT;
+    INT,
+
+    ATTRIBUTE;
 }

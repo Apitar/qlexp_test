@@ -71,9 +71,11 @@ public class GraphNode {
         if (BOOL.equals(resultType)) {
             return String.valueOf((boolean) resultValue);
         } else if (STRING.equals(resultType)) {
-            return (String) resultValue;
+            return "\"" + resultValue + "\"";
         } else if (INT.equals(resultType)) {
             return String.valueOf((int) resultValue);
+        } else if (ATTRIBUTE.equals(resultType)) {
+            return (String) resultValue;
         }
         assert false;
         return null;
